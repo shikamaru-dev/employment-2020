@@ -1,0 +1,29 @@
+/* 
+ Localizable.strings
+ JobAssignments
+ 
+ Created by 曹 一凡 on 2019/10/29.
+ Copyright © 2019 曹 一凡. All rights reserved.
+ */
+"loginAlertTitle" = "ログイン失敗";
+"loginAlertMsg" = "ユーザ名またはパスワードが違います";
+"loginOk" = "OK";
+
+"topViewUnknown" = "未定";
+
+"notificationAlertTitle" = "割り当て完了";
+"notificationAlertMsg" = "\n 翌出勤日の当番が割り当てられました。すぐチェックしますか？";
+"notificationButtonCheck" = "チェックする";
+"notificationButtonCancel" = "TOPに戻る";
+
+"toubanSelectAlertTitle" = "担当変更確認";
+
+"toubanSelectAlertMsg" = "\n 本日の担当者を\n%@さんの代わりにあなたにしてもよろしいですか？";
+
+"toubanSelectAlertButtonYes" = "はい";
+"toubanSelectAlertButtonNo" = "いいえ";
+
+"confirmTitle" = "リクエスト送信完了";
+"confirmDayTom" = "\n翌出勤日";
+"confirmDayTod" = "\n当日";
+"confirmMsg" = "の当番リクエストが送信されました。";

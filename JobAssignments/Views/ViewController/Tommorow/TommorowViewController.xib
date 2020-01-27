@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TommorowViewController" customModule="Souji" customModuleProvider="target">
+            <connections>
+                <outlet property="btnChangeDesign" destination="7al-Pb-S76" id="ad6-uI-mCR"/>
+                <outlet property="tommorowTable" destination="IVq-gt-xUj" id="npy-AK-Qys"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-R8-PyC">
+                    <rect key="frame" x="20" y="65" width="46" height="20"/>
+                    <state key="normal" title="閉じる"/>
+                    <connections>
+                        <action selector="BtnClose:" destination="-1" eventType="touchUpInside" id="oIV-Cf-cfw"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IVq-gt-xUj">
+                    <rect key="frame" x="0.0" y="93" width="414" height="715"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="owO-ke-jtN"/>
+                        <outlet property="delegate" destination="-1" id="TXs-GR-xt1"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7al-Pb-S76">
+                    <rect key="frame" x="185" y="833" width="209" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="CYp-Z2-fJc"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <state key="normal" title="自分を入れ替える"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnChange:" destination="-1" eventType="touchUpInside" id="cZg-2U-0mI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌営業日の当番リスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dew-dO-exs">
+                    <rect key="frame" x="120" y="65" width="174" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IVq-gt-xUj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5t1-Tf-AF0"/>
+                <constraint firstItem="GNL-R8-PyC" firstAttribute="firstBaseline" secondItem="dew-dO-exs" secondAttribute="baseline" id="6Bw-93-kQo"/>
+                <constraint firstItem="7al-Pb-S76" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="185" id="Bwf-rm-sqe"/>
+                <constraint firstItem="GNL-R8-PyC" firstAttribute="bottom" secondItem="dew-dO-exs" secondAttribute="bottom" id="JXa-2U-s8J"/>
+                <constraint firstItem="IVq-gt-xUj" firstAttribute="top" secondItem="GNL-R8-PyC" secondAttribute="bottom" constant="8" id="KUL-Ag-3gA"/>
+                <constraint firstItem="7al-Pb-S76" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="PqF-du-ULO"/>
+                <constraint firstItem="GNL-R8-PyC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="W6T-2b-ok3"/>
+                <constraint firstItem="IVq-gt-xUj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="azI-Nu-igJ"/>
+                <constraint firstItem="GNL-R8-PyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="jZD-oM-0sY"/>
+                <constraint firstItem="7al-Pb-S76" firstAttribute="top" secondItem="IVq-gt-xUj" secondAttribute="bottom" constant="25" id="uDw-VF-9kF"/>
+                <constraint firstAttribute="bottom" secondItem="7al-Pb-S76" secondAttribute="bottom" constant="28" id="vjM-UD-99o"/>
+                <constraint firstItem="IVq-gt-xUj" firstAttribute="centerX" secondItem="dew-dO-exs" secondAttribute="centerX" id="x2L-f0-j3x"/>
+                <constraint firstItem="GNL-R8-PyC" firstAttribute="baseline" secondItem="dew-dO-exs" secondAttribute="baseline" id="xln-px-4Xn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

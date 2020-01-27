@@ -1,0 +1,6 @@
+framework module Pods_JobAssignments {
+  umbrella header "Pods-JobAssignments-umbrella.h"
+
+  export *
+  module * { export * }
+}

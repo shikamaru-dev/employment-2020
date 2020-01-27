@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextToubanSelectViewController" customModule="Souji" customModuleProvider="target">
+            <connections>
+                <outlet property="nextTable" destination="E0N-3o-bwE" id="1CS-x4-BwI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E0N-3o-bwE">
+                    <rect key="frame" x="0.0" y="194" width="414" height="358"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="358" id="b9H-ye-dXg"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sSg-fE-XMy"/>
+                        <outlet property="delegate" destination="-1" id="Lpu-Jh-qo8"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「☆」付いているのは当番リスト先頭の人です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-8H-hfN">
+                    <rect key="frame" x="20" y="143" width="364" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌営業日の担当者を選択してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oih-o1-9xi">
+                    <rect key="frame" x="20" y="74" width="294.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRZ-Y3-kIG">
+                    <rect key="frame" x="185" y="802" width="209" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="idQ-Ai-CM1"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <viewLayoutGuide key="safeArea" id="8AF-kt-Wd0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="他の人から選択する">
+                        <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="BtnAllWith_sender:" destination="-1" eventType="touchUpInside" id="DP1-rj-spW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eRZ-Y3-kIG" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="1ya-QR-Kvf"/>
+                <constraint firstItem="E0N-3o-bwE" firstAttribute="top" secondItem="WGT-8H-hfN" secondAttribute="bottom" constant="30" id="20m-ru-8z7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eRZ-Y3-kIG" secondAttribute="bottom" constant="25" id="9fT-Kr-5FL"/>
+                <constraint firstItem="oih-o1-9xi" firstAttribute="leading" secondItem="WGT-8H-hfN" secondAttribute="leading" id="RK7-d7-YPf"/>
+                <constraint firstItem="oih-o1-9xi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="WIi-su-0bP"/>
+                <constraint firstItem="E0N-3o-bwE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YxU-Bj-eeT"/>
+                <constraint firstItem="oih-o1-9xi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="aFA-Uk-yWv"/>
+                <constraint firstItem="E0N-3o-bwE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fUg-vr-TS1"/>
+                <constraint firstItem="E0N-3o-bwE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="msK-Rt-Zr1"/>
+                <constraint firstItem="WGT-8H-hfN" firstAttribute="top" secondItem="oih-o1-9xi" secondAttribute="bottom" constant="48" id="szH-87-PaF"/>
+                <constraint firstItem="eRZ-Y3-kIG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="185" id="wOM-LJ-RSP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.23188405797103" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

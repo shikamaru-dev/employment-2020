@@ -1,0 +1,29 @@
+/* Class = "UINavigationItem"; title = "リクエスト確認"; ObjectID = "XDw-pr-N7q"; */
+"XDw-pr-N7q.title" = "リクエスト確認";
+
+/* Class = "UIViewController"; title = "TommorowView"; ObjectID = "YzW-TE-LVf"; */
+"YzW-TE-LVf.title" = "TommorowView";
+
+/* Class = "UINavigationItem"; title = "今日の当番"; ObjectID = "aBf-xT-FpB"; */
+"aBf-xT-FpB.title" = "今日の当番";
+
+/* Class = "UINavigationItem"; title = "候補者一覧"; ObjectID = "bBl-tX-iuk"; */
+"bBl-tX-iuk.title" = "候補者一覧";
+
+/* Class = "UINavigationItem"; title = "次の当番選択"; ObjectID = "c0f-jX-4dt"; */
+"c0f-jX-4dt.title" = "次の当番選択";
+
+/* Class = "UINavigationItem"; title = "掃除機A"; ObjectID = "dTC-dr-L5F"; */
+"dTC-dr-L5F.title" = "掃除機A";
+
+/* Class = "UINavigationItem"; title = "次の営業日の当番"; ObjectID = "tgk-2m-9g3"; */
+"tgk-2m-9g3.title" = "次の営業日の当番";
+
+/* Class = "UINavigationItem"; title = "ログイン"; ObjectID = "u59-7t-NBt"; */
+"u59-7t-NBt.title" = "ログイン";
+
+/* Class = "UINavigationItem"; title = "リクエスト送信"; ObjectID = "vFz-YD-kd2"; */
+"vFz-YD-kd2.title" = "リクエスト送信";
+
+/* Class = "UIBarButtonItem"; title = "次の当番選択"; ObjectID = "zag-4y-ygE"; */
+"zag-4y-ygE.title" = "次の当番選択";
